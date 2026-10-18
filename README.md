@@ -407,19 +407,15 @@ We'd rather say these ourselves:
 ## 👥 Team, License and Acknowledgements
 
 **Team:** `<Cache Us If You Can>`
-- `<Name>`: Harsha Jain
-- `<Name>`: Sakshi Mishra
-- `<Name>`: Muskan Negi
-
-**License:** `<choose one, e.g. MIT>`. Check each model's and asset's own license. ARASAAC pictograms are non-commercial.
+- `Name`: Harsha Jain
+- `Name`: Sakshi Mishra
+- `Name`: Muskan Negi
 
 **Acknowledgements**
 - [TinyFish](https://www.tinyfish.ai) for the web agent platform
 - [ARASAAC](https://arasaac.org) for pictograms
 - [OpenAI Whisper](https://github.com/openai/whisper), [PanPhon](https://github.com/dmort27/panphon), and [Sentence-Transformers](https://www.sbert.net)
 - Speech-language pathologists, caregivers, and people living with aphasia, whose experience shaped this problem
-
-> *Statistic note: "about 1 in 3 stroke survivors develops aphasia" is a widely cited figure. Add a source link from a stroke association or aphasia charity here.*
 
 ---
 
