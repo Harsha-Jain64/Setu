@@ -406,11 +406,10 @@ We'd rather say these ourselves:
 
 ## 👥 Team, License and Acknowledgements
 
-**Team:** `<Team name>`
-- `<Name>`: Speech / ML
-- `<Name>`: TinyFish / Agents
-- `<Name>`: Frontend
-- `<Name>`: Infrastructure, Evaluation, Pitch
+**Team:** `<Cache Us If You Can>`
+- `<Name>`: Harsha Jain
+- `<Name>`: Sakshi Mishra
+- `<Name>`: Muskan Negi
 
 **License:** `<choose one, e.g. MIT>`. Check each model's and asset's own license. ARASAAC pictograms are non-commercial.
 
