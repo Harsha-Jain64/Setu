@@ -272,59 +272,22 @@ SETU is designed around the principles of India's **Digital Personal Data Protec
 
 ### Prerequisites
 
-- Python 3.10+
-- Node.js 18+
-- `espeak-ng` (needed by the phoneme model)
-- A TinyFish API key ([get one here](https://www.tinyfish.ai))
+## Tech Stack
+- Python (Flask)
+- TinyFish API
+- Tailwind CSS (via CDN)
+- Web Speech API
 
-### 1. Clone the repo
-
-```bash
-git clone https://github.com/<your-username>/setu.git
-cd setu
-```
-
-### 2. Backend setup
-
-```bash
-cd backend
-python -m venv venv
-source venv/bin/activate        # Windows: venv\Scripts\activate
-pip install -r requirements.txt
-```
-
-### 3. Add your keys
-
-Create a `.env` file inside `backend/`:
-
-```env
-TINYFISH_API_KEY=your_key_here
-MOCK=0          # set to 1 to replay recorded agent runs offline
-```
-
-### 4. Run the mock portals
-
-```bash
-cd mock_portals
-python app.py
-```
-
-### 5. Run the backend
-
-```bash
-cd backend
-uvicorn main:app --reload
-```
-
-### 6. Run the frontend
-
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
-Open the URL shown in the terminal (usually `http://localhost:5173`).
+## Setup Instructions
+1. Clone the repository.
+2. Create a virtual environment: `python -m venv venv`
+3. Activate it: 
+   - Windows: `venv\Scripts\activate`
+   - Mac/Linux: `source venv/bin/activate`
+4. Install dependencies: `pip install flask tinyfish python-dotenv`
+5. Rename `.env.example` to `.env` and add your TinyFish API key.
+6. Run the app: `python app.py`
+7. Open `http://127.0.0.1:5000` in Chrome or Edge (required for voice features).
 
 ### Demo mode (no internet or API needed)
 
@@ -338,17 +301,9 @@ Set `MOCK=1` in `.env`. Every agent call is recorded and can be replayed offline
 
 ```
 setu/
-├── backend/
-│   ├── listen/          # audio → rough text + phonemes
-│   ├── decoder/         # sound, meaning, description matching + live prior
-│   ├── gate/            # Guardian Gate: confidence + safety checks
-│   ├── tinyfish/        # TinyFish wrappers: read, ground, verify, act, prove
-│   ├── world/           # Person's World: task list + live status
-│   └── main.py
-├── frontend/            # Today Board, Confirm card, Something New
-├── mock_portals/        # Two sandbox portals with different layouts
-├── eval/                # Test fragments + ablation scripts
-├── docs/                # Slides, diagrams
+├── templates
+│   └── index.html
+├── app.py
 └── README.md
 ```
 
